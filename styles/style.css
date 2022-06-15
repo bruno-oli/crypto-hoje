@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body header {
+  width: 100vw;
+  height: 15vh;
+  background-color: #52ffa8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header h1 {
+  color: white;
+  font-weight: bolder;
+}
+
+body main {
+  width: 100vw;
+  height: 85vh;
+  background-color: #1b222c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "name go" "info info";
+  gap: 1.5rem;
+}
+
+body main section #cryptoGo {
+  cursor: pointer;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: go;
+  border: none;
+  background-color: #52ffa8;
+  width: 12vw;
+  border-radius: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+body main section #cryptoName {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+  background-color: #323a49;
+  border: none;
+  width: 36vw;
+  height: 7vh;
+  border-radius: 2rem;
+  padding: 0 1rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+body main section #cryptoName::-webkit-input-placeholder {
+  color: #cee3e9;
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+body main section .crypto-info {
+  background-color: #323a49;
+  width: 50vw;
+  height: 60vh;
+  border-radius: 2rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: info;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1.5rem;
+}
+
+body main section .crypto-info h1 {
+  background-color: #52ffa8;
+  width: 100%;
+  color: white;
+  text-align: center;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 0.6rem 0;
+}
+
+body main section .crypto-info span {
+  color: #cee3e9;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+body main section .crypto-info .resultado {
+  color: #52ffa8;
+}
+/*# sourceMappingURL=style.css.map */

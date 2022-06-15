@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Hoje</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>CRYPTO HOJE</h1>
+  </header>
+  <main>
+    <section>
+      <input placeholder="Digite a sigla de uma crypto..." type="text" name="crypto" id="cryptoName">
+      <button id="cryptoGo" type="submit">GO!</button>
+      <div class="crypto-info">
+        <h1>INFORMAÇÕES</h1>
+        <span>Maior preço unitário de negociação das últimas 24 horas: <span class="resultado maior-preco"></span></span>
+        <span>Menor preço unitário de negociação das últimas 24 horas: <span class="resultado menor-preco"></span></span>
+        <span>Quantidade negociada nas últimas 24 horas: <span class="resultado quantidade-negociada"></span></span>
+        <span>Preço unitário da última negociação: <span class="resultado preco-unitario"></span></span>
+        <span>Maior preço de oferta de compra das últimas 24 horas: <span class="resultado preco-oferta-compra"></span></span>
+        <span>Menor preço de oferta de venda das últimas 24 horas: <span class="resultado preco-oferta-venda"></span></span>
+      </div>
+    </section>
+  </main>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

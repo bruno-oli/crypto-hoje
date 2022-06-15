@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+$LightCyan: #cee3e9;
+$NeonGreen: #52ffa8;
+$GrayishBlue: #4e5d73;
+$DarkGrayishBlue: #323a49;
+$DarkBlue: #1b222c;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  header {
+    width: 100vw;
+    height: 15vh;
+    background-color: $NeonGreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: white;
+      font-weight: bolder;
+    }
+  }
+  main {
+    width: 100vw;
+    height: 85vh;
+    background-color: $DarkBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    section {
+      display: grid;
+      grid-template-areas:
+        "name go"
+        "info info";
+      gap: 1.5rem;
+      #cryptoGo {
+        cursor: pointer;
+        grid-area: go;
+        border: none;
+        background-color: $NeonGreen;
+        width: 12vw;
+        border-radius: 2rem;
+        color: white;
+        font-weight: bold;
+      }
+      #cryptoName {
+        grid-area: name;
+        background-color: $DarkGrayishBlue;
+        border: none;
+        width: 36vw;
+        height: 7vh;
+        border-radius: 2rem;
+        padding: 0 1rem;
+        color: white;
+        font-size: 1.2rem;
+        &::-webkit-input-placeholder {
+          color: $LightCyan;
+          font-style: italic;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
+      .crypto-info {
+        background-color: $DarkGrayishBlue;
+        width: 50vw;
+        height: 60vh;
+        border-radius: 2rem;
+        grid-area: info;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1.5rem;
+        h1 {
+          background-color: $NeonGreen;
+          width: 100%;
+          color: white;
+          text-align: center;
+          border-top-left-radius: 2rem;
+          border-top-right-radius: 2rem;
+          padding: 0.6rem 0;
+        }
+        span {
+          color: $LightCyan;
+          font-weight: bold;
+          font-size: 1.1rem;
+        }
+        .resultado {
+          color: $NeonGreen;
+        }
+      }
+    }
+  }
+}
