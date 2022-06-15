@@ -139,6 +139,12 @@ body main section .crypto-info .resultado {
 }
 
 @media (max-width: 600px) {
+  body main section .crypto-info .resultado {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
   body main section .crypto-info {
     width: 80vw;
   }
