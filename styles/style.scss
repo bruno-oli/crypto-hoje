@@ -39,6 +39,7 @@ body {
         "name go"
         "info info";
       gap: 1.5rem;
+      justify-items: center;
       #cryptoGo {
         cursor: pointer;
         grid-area: go;
@@ -64,6 +65,13 @@ body {
           font-style: italic;
           font-size: 1.2rem;
           font-weight: bold;
+        }
+        @media (max-width: 600px) {
+          width: 64vw;
+          font-size: 0.8rem;
+          &::-webkit-input-placeholder {
+            font-size: 0.8rem;
+          }
         }
       }
       .crypto-info {
@@ -93,6 +101,14 @@ body {
         }
         .resultado {
           color: $NeonGreen;
+        }
+        @media (max-width: 600px) {
+          width: 80vw;
+          span {
+            font-size: 0.8rem;
+            text-align: center;
+            margin: 0 1rem;
+          }
         }
       }
     }
